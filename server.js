@@ -13,9 +13,9 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
   .catch(err => console.error('Kết nối MongoDB thất bại:', err));
 
 app.get('/', (req, res) => {
-  res.send('Chào mừng bạn đến với ứng dụng Dữ liệu Theo Thời Gian!');
+  res.send('Welcome to the Real-Time Data Application!');
 });
 
 app.listen(PORT, () => {
-  console.log(`Máy chủ đang chạy tại http://localhost:${PORT}`);
+  console.log(`Server is running at http://localhost:${PORT}`);
 });
